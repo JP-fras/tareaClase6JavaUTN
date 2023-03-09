@@ -3,8 +3,8 @@ import java.time.LocalDateTime;
 public class Main {
     public static void main(String[] args) {
         Producto producto1 = new Producto("Jabon en polvo", "1234", 40);
-        Producto producto2 = new Producto("Esponjas", "1233", 10);
-        Producto producto3 = new Producto("Chocolates", "1232", 100);
+        Producto producto2 = new Producto("Esponjas", "1235", 10);
+        Producto producto3 = new Producto("Chocolates", "1236", 100);
         Producto[] productos = new Producto[3];
         productos[0] = producto1;
         productos[1] = producto2;
