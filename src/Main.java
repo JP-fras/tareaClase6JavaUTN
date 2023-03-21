@@ -1,4 +1,5 @@
 import java.time.LocalDateTime;
+import java.util.HashMap;
 
 public class Main {
     public static void main(String[] args) {
@@ -14,6 +15,23 @@ public class Main {
 
         Carrito carrito1 = new Carrito(persona1, productos);
 
+
+
+        Descuento paraCarrito = new DescuentoFijo();
+        paraCarrito.setValor(100);
+        carrito1.setDescuento(paraCarrito);
         System.out.println(carrito1.calcularPrecioArr(carrito1.Productos));
+
+
+        DescuentoFijo descFijo = new DescuentoFijo();
+        descFijo.setValor(1000);
+
+        DescuentoPorcentaje descPorcentaje = new DescuentoPorcentaje();
+        descPorcentaje.setValor(0.5f);
+
+
+
+
+
     }
 }
